@@ -25,24 +25,48 @@ public class JavaBasics {
         // }
 
         //// Income Tax Calculator
-        double income = 750000; // 7.5 Lakh
-        double tax;
+        // double income = 750000; // 7.5 Lakh
+        // double tax;
 
-        if (income <= 250000) {
-            tax = 0;
-        } else if (income <= 500000) {
-            tax = 0.05 * (income - 250000);
-        } else if (income <= 1000000) {
-            tax = 0.05 * 250000              // 2.5L–5L
-                + 0.20 * (income - 500000);  // 5L–income
-        } else {
-            tax = 0.05 * 250000              // 2.5L–5L
-                + 0.20 * 500000              // 5L–10L
-                + 0.30 * (income - 1000000); // above 10L
-        }
+        // if (income <= 250000) {
+        // tax = 0;
+        // } else if (income <= 500000) {
+        // tax = 0.05 * (income - 250000);
+        // } else if (income <= 1000000) {
+        // tax = 0.05 * 250000 // 2.5L–5L
+        // + 0.20 * (income - 500000); // 5L–income
+        // } else {
+        // tax = 0.05 * 250000 // 2.5L–5L
+        // + 0.20 * 500000 // 5L–10L
+        // + 0.30 * (income - 1000000); // above 10L
+        // }
 
-        System.out.println("Income: " + income);
-        System.out.println("Tax: " + tax);
+        // System.out.println("Income: " + income);
+        // System.out.println("Tax: " + tax);
+
+        //// Largest of 3
+        // System.out.print("Enter a : ");
+        // int a = sc.nextInt();
+        // System.out.print("Enter b : ");
+        // int b = sc.nextInt();
+        // System.out.print("Enter c : ");
+        // int c = sc.nextInt();
+
+        // if (a > b) {
+        //     if (a > c) {
+        //         System.out.println("a is largest.");
+        //     } else {
+        //         System.out.println("c is largest");
+        //     }
+        // } else {
+        //     if (b > c) {
+        //         System.out.print("b is largest");
+        //     } else {
+        //         System.out.print("c is largest");
+        //     }
+        // }
+
+        
         sc.close();
     }
 }
