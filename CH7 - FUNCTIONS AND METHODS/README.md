@@ -4,7 +4,7 @@ This README gives a quick overview of **methods in Java** with short explanation
 
 ---
 
-## Table of Contents
+## Table of Contents 
 
 1. [Functions / Methods](#1-functionsmethods)
 2. [Syntax – Function Code / Demo](#2-syntax--function-codedemo)
