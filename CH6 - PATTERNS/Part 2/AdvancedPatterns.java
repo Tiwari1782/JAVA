@@ -129,6 +129,79 @@ public class AdvancedPatterns {
         sc.close();
     }
 
+    // Solid Rhombus
+    public static void Rhombus() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n : ");
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            // Spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            // Stars
+            for (int j = 1; j <= n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+
+    // Hollow Rhombus
+    public static void hollowRhombus() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n : ");
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            // Spaces
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            // Hollow rectangle
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+
+    // Diamond Pattern
+    public static void Diamond() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n : ");
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            // Spaces
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            // Stars
+            for (int j = 1; j <= (2 * (i - 1) + 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // Inversion
+        for (int i = n; i >= 1; i--) {
+            // Spaces
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            // Stars
+            for (int j = 1; j <= (2 * (i - 1) + 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // HollowRectangle();
@@ -136,7 +209,10 @@ public class AdvancedPatterns {
         // numpyramid();
         // floydstriangle();
         // ZeroOne();
-        ButterFly();
+        // ButterFly();
+        // Rhombus();
+        // hollowRhombus();
+        Diamond();
         sc.close();
     }
 }
