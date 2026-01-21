@@ -51,11 +51,28 @@ public class MaxSubarray {
         System.out.println("Max Sum : " + maxSum);
     }
 
+    // Kadanes Algorithm
+    public static void kadane(int num[]) {
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        for (int i = 0; i < num.length; i++) {
+            currSum += num[i];
+            if (currSum < 0) {
+                currSum = 0;
+            }
+            maxSum = Math.max(maxSum, currSum);
+        }
+        System.out.println("Maximum Subarray Sum is : " + maxSum);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr[] = { 1, -2, 6, -1, 3 };
         // BruteForce(arr);
-        PrefixSum(arr);
+        // PrefixSum(arr);
+        int num[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
+        kadane(num);
         sc.close();
     }
 }
